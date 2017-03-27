@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">DresdenZooGuide</string>
+
+    <string name="introduction">Introduction</string>
+    <string name="mainmap">Map</string>
+    <string name="panorama">Panorama</string>
+    <string name="gallery">Gallery</string>
+    <string name="about">About</string>
+    <string name="title">Zoo Dresden</string>
+    <string name="description1">
+        Covering around 13 hectares, Dresden Zoo is home to more than 2,000 animals and over 300 species.
+        The animal residents offer a fascinating journey through all the continents.  Discover vicunas,
+        nandus and capybara in the South America section, or Asian hoofed animals such as the rare mishmi
+        takin and hog deer, as well as Asian small-clawed otters and orang-utans. And don’t forget to
+        stop by at the Tundra aviary or see the Australian red kangaroo!
+    </string>
+    <string name="description2">
+        The bombing of Dresden on February 13, 1945 also led the zoo to heavy destructions and destroyed almost the entire herd, but already
+        in May 1946 took place the reopening. 1950 Wolfgang Ullrich applied for a support center, was once used as a Director and headed
+        the zoo until his death in 1973. Since 1968, there is a zoo school.
+    </string>
+
+    <string name="title_activity_main_map">Map</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="handed_map">Handed Map</string>
+    <string name="hybrid_map">Hybrid Map</string>
+    <string name="base_map">Base Map</string>
+
+    <string name="opening_hours1">
+        Open 365 days a year!*
+    </string>
+    <string name="opening_hours2">
+        Ticket Office closes 45 minutes before the zoo closes. \n
+        *On 24.12 &amp; 31.12 open to 15.00 and ticket desk closes at 14.00.
+    </string>
+
+    <string name="ticket_price">
+        Please note that we can only admit children under 12 years to the zoo when accompanied by an adult.
+    </string>
+
+    <string name="version">version: 0.1.1</string>
+    <string name="about_title">
+        About the app
+    </string>
+    <string name="about_author">
+        Authors of this Android application: \nChiyuan Gu, Furui Sun and Shuoyan Huang \n \nThis app
+        is developed as a group project for the course "Mobile Cartography" in TU Dresden, 2015/16 WS.
+    </string>
+
+    <string name="about_attribution">
+        Attributions:
+    </string>
+    <string name="about_attribution_text">
+        Map animal markers designing idea: freepik \nMenu icons: Google material icon \nAnimal
+        information: Wikipedia \nContent in the Introduction page are taken from Zoo Dresden
+        official website: <a href="http://www.zoo-dresden.de">http://www.zoo-dresden.de</a>
+    </string>
+
+
+</resources>

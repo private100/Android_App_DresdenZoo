@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/handedmap"
+        android:showAsAction="never"
+        android:title="@string/handed_map" />
+    <item
+        android:id="@+id/hybridmap"
+        android:showAsAction="never"
+        android:title="@string/hybrid_map" />
+    <item
+        android:id="@+id/basemap"
+        android:showAsAction="never"
+        android:title="@string/base_map" />
+</menu>

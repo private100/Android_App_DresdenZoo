@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navi"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/zoo_logo" />
+
+
+            <TextView
+                android:id="@+id/zooIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:text="@string/title"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/text_zooIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description1"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/opening_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:text="Opening Hours"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/text_opening_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/opening_hours1"
+                android:paddingBottom="8dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="40dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Spring (from 06/02/2016):" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="8.30  –  17.30" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Summer (from 25/03/2016):" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="8.30  –  18.30" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Autumn (from 04/10/2016):" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="8.30  –  17.30" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Winter (from 01/11/2016):" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="8.30  –  16.30" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/text_opening_hours2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/opening_hours2"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="8dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/admission_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:text="Admission Prices"
+                android:textColor="@android:color/black" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Adults"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€12"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="DVB/VVO subscription card" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€11" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Dresden Pass" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€6" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Annual season ticket" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€35" />
+                </TableRow>
+
+                <View
+                    android:layout_height="0.5dp"
+                    android:background="#FF909090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Children (3-16 years)"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€4"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="DVB/VVO subscription card" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€3.5" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Dresden Pass" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Annual season ticket" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€18" />
+                </TableRow>
+
+                <View
+                    android:layout_height="0.5dp"
+                    android:background="#FF909090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Concessions (with ID)"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€8"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="(School children, students and severely disabled)"
+                        android:textStyle="italic" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="DVB/VVO subscription card" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€7.5" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="3dp"
+                        android:text="Annual season ticket" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€24" />
+                </TableRow>
+
+                <View
+                    android:layout_height="0.5dp"
+                    android:background="#FF909090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Families (2 adults with up to 4 children)"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€30"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Annual season ticket" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€80" />
+                </TableRow>
+
+                <View
+                    android:layout_height="0.5dp"
+                    android:background="#FF909090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Groups (adults and children, 10 or more)"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Adults" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€9" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Children" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€2" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#FF909090" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Mondays (except public holidays)"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_column="1"
+                        android:padding="2dp"
+                        android:text="Adults"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:padding="2dp"
+                        android:text="€8"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/text_ticket_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ticket_price"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/navi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fadingEdge="none"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/button_introduction"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+
+            android:button="@color/red"
+            android:gravity="center"
+            android:onClick="onClick_introduction"
+            android:enabled="false"
+            android:drawableTop="@drawable/ic_intro"
+            android:text="@string/introduction" />
+
+        <RadioButton
+            android:id="@+id/button_mainmap"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+
+            android:button="@color/green"
+            android:gravity="center"
+            android:onClick="onClick_mainmap"
+            android:drawableTop="@drawable/ic_map"
+            android:text="@string/mainmap" />
+
+
+        <RadioButton
+            android:id="@+id/button_panorama"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+
+            android:button="@color/blue"
+            android:gravity="center"
+            android:onClick="onClick_panorama"
+            android:drawableTop="@drawable/ic_gallery"
+            android:text="@string/gallery" />
+
+
+        <RadioButton
+            android:id="@+id/button_about"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+
+            android:button="@color/yellow"
+            android:gravity="center"
+            android:onClick="onClick_about"
+            android:drawableTop="@drawable/ic_about"
+            android:text="@string/about"
+            android:elegantTextHeight="false" />
+    </RadioGroup>
+
+</RelativeLayout>

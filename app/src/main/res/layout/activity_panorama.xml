@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/gallery_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+
+    <RadioGroup
+        android:id="@+id/navi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fadingEdge="none"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/button_introduction"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+
+            android:button="@color/red"
+            android:gravity="center"
+            android:onClick="onClick_introduction"
+            android:drawableTop="@drawable/ic_intro"
+            android:text="@string/introduction" />
+
+        <RadioButton
+            android:id="@+id/button_mainmap"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+
+            android:button="@color/green"
+            android:gravity="center"
+            android:onClick="onClick_mainmap"
+            android:drawableTop="@drawable/ic_map"
+            android:text="@string/mainmap" />
+
+
+        <RadioButton
+            android:id="@+id/button_panorama"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+
+            android:button="@color/blue"
+            android:gravity="center"
+            android:onClick="onClick_panorama"
+            android:enabled="false"
+            android:drawableTop="@drawable/ic_gallery"
+            android:text="@string/gallery" />
+
+
+        <RadioButton
+            android:id="@+id/button_about"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-light"
+
+            android:button="@color/yellow"
+            android:gravity="center"
+            android:onClick="onClick_about"
+            android:drawableTop="@drawable/ic_about"
+            android:text="@string/about"
+            android:elegantTextHeight="false" />
+    </RadioGroup>
+
+</RelativeLayout>

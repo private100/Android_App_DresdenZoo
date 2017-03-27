@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mobilecartography.dresdenzooguide.MainMapActivity" />
+
+    <RadioGroup
+        android:id="@+id/navi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:fadingEdge="horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/button_introduction"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@color/red"
+            android:drawableTop="@drawable/ic_intro"
+            android:fontFamily="sans-serif-light"
+
+            android:gravity="center"
+            android:onClick="onClick_introduction"
+            android:text="@string/introduction"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/button_mainmap"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@color/green"
+            android:drawableTop="@drawable/ic_map"
+            android:enabled="false"
+
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:onClick="onClick_mainmap"
+            android:text="@string/mainmap"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <RadioButton
+            android:id="@+id/button_panorama"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@color/blue"
+            android:drawableTop="@drawable/ic_gallery"
+            android:fontFamily="sans-serif-light"
+
+            android:gravity="center"
+            android:onClick="onClick_panorama"
+            android:text="@string/gallery"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <RadioButton
+            android:id="@+id/button_about"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@color/yellow"
+            android:drawableTop="@drawable/ic_about"
+            android:elegantTextHeight="false"
+
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:onClick="onClick_about"
+            android:text="@string/about"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:onClick="onClick_animal"
+        android:text="Animal"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/button_animal"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:onClick="onClick_restaurant"
+        android:text="Restaurant"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_wc"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/button_restaurant"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:onClick="onClick_wc"
+        android:text="Toilet"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_animalslist"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_above="@+id/navi"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClick_animalslist"
+        android:text="Animal List"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
